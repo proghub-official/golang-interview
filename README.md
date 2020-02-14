@@ -3,7 +3,7 @@
 
 :information_source: В этом репозитории содержаться вопросы и ответы с помощью которых вы можете подготовиться к собеседованию по Golang
 
-:bar_chart: Вопросов - 4.
+:bar_chart: Вопросов - 5.
 
 :pencil: Вы можете добавить свой вопрос или обьяснение, исправить/дополнить существующий с помощью пул реквеста :)
 
@@ -141,6 +141,8 @@ first: 1
 </details>
 
 </details>
+
+<details>
 <summary><b>5. Что выведет код?</b></summary><br>
 
 ```golang
@@ -151,7 +153,7 @@ import (
 )
 
 func mod(a []int) {
-	// How will change the result if uncomment the line below? Why?
+	// Как и почему изменится вывод если раскомментировать строку ниже?
 	// a = append(a, 125)
 	
 	for i := range a {
@@ -172,7 +174,7 @@ func main() {
 <summary><b>Ответ</b></summary><br>
 [5 5 5 5]
 [5 5 5 5]
-if uncomment a = append..
+если раскомментировать `a = append(a, 125)`
 [5 5 5 5 5]
 [1 2 3 4]
 </details>
