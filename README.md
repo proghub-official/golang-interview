@@ -16,7 +16,7 @@
 # Список вопросов и ответов
 
 <details>
-<summary><b>1. Какие основные фичи GO</b></summary><br>
+<summary><b>1. Какие основные фичи GO?</b></summary><br>
 
 * Сильная статическая типизация - тип переменных не может быть изменен с течением времени, и они должны быть определены во время компиляции
 * Быстрое время компиляции
@@ -187,11 +187,17 @@ func main() {
 <summary><b>6. Что выведет код? (тема - defer)</b></summary><br>
 
 ```golang
-func a() {
-    i := 0
-    defer fmt.Println(i)
-    i++
-    return
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	i := 0
+	defer fmt.Println(i)
+	i++
+	return
 }
 ```
 
@@ -213,10 +219,10 @@ import (
 )
 
 func main() {
-    for i := 0; i < 5; i++ {
-    	defer func(i *int) {
-        	fmt.Printf("%v ", *i)
-    	}(&i)
+	for i := 0; i < 5; i++ {
+		defer func(i *int) {
+			fmt.Printf("%v ", *i)
+		}(&i)
 	}
 
 }
