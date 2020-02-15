@@ -3,7 +3,7 @@
 
 :information_source: В этом репозитории содержаться вопросы и ответы с помощью которых вы можете подготовиться к собеседованию по Golang
 
-:bar_chart: Вопросов - 5.
+:bar_chart: Вопросов - 7.
 
 :pencil: Вы можете добавить свой вопрос или обьяснение, исправить/дополнить существующий с помощью пул реквеста :)
 
@@ -172,13 +172,57 @@ func main() {
 
 <details>
 <summary><b>Ответ</b></summary><br>
-[5 5 5 5]
-[5 5 5 5]
-
-если раскомментировать `a = append(a, 125)`
-
-[5 5 5 5 5]
+[5 5 5 5]<br>
+[5 5 5 5]<br>
+если раскомментировать `a = append(a, 125)`<br>
+[5 5 5 5 5]<br>
 [1 2 3 4]
+</details>
+
+</details>
+
+<details>
+<summary><b>6. Что выведет код? (тема - defer)</b></summary><br>
+
+```golang
+func a() {
+    i := 0
+    defer fmt.Println(i)
+    i++
+    return
+}
+```
+
+<details>
+<summary><b>Ответ</b></summary><br>
+0
+</details>
+
+</details>
+
+<details>
+<summary><b>7. Что выведет код? (тема - defer)</b></summary><br>
+
+```golang
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+    for i := 0; i < 5; i++ {
+    	defer func(i *int) {
+        	fmt.Printf("%v ", *i)
+    	}(&i)
+	}
+
+}
+```
+
+<details>
+<summary><b>Ответ</b></summary><br>
+5 5 5 5 5
 </details>
 
 </details>
