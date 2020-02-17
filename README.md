@@ -5,7 +5,7 @@
 
 :iphone: Telegram-канал - [@golangquiz](https://t.me/golangquiz)
 
-:bar_chart: Вопросов - 7.
+:bar_chart: Вопросов - 8.
 
 :pencil: Вы можете добавить свой вопрос или обьяснение, исправить/дополнить существующий с помощью пул реквеста :)
 
@@ -231,6 +231,24 @@ func main() {
 <details>
 <summary><b>Ответ</b></summary><br>
 5 5 5 5 5
+</details>
+
+</details>
+
+<details>
+<summary><b>8. Предположим, что `x` объявлен, а `y` не объявлен, какие пункты ниже верны?</b></summary><br>
+
+```golang
+x, _ := f()
+x, _ = f()
+x, y := f()
+x, y = f()
+```
+
+<details>
+<summary><b>Ответ</b></summary><br>
+x, _ = f()<br>
+x, y := f()
 </details>
 
 </details>
