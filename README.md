@@ -5,7 +5,7 @@
 
 :iphone: Telegram-канал - [@golangquiz](https://t.me/golangquiz)
 
-:bar_chart: Вопросов - 8.
+:bar_chart: Вопросов - 10.
 
 :pencil: Вы можете добавить свой вопрос или обьяснение, исправить/дополнить существующий с помощью пул реквеста :)
 
@@ -249,6 +249,30 @@ x, y = f()
 <summary><b>Ответ</b></summary><br>
 x, _ = f()<br>
 x, y := f()
+</details>
+
+</details>
+
+<details>
+<summary><b>9. Что делает `runtime.newobject()`?</b></summary><br>
+
+<details>
+<summary><b>Ответ</b></summary><br>
+Выделяет память в куче.
+https://golang.org/pkg/runtime/?m=all#newobject
+</details>
+
+</details>
+
+
+<details>
+<summary><b>10. Что такое `$GOROOT` и `$GOPATH`?</b></summary><br>
+
+<details>
+<summary><b>Ответ</b></summary><br>
+`$GOROOT` каталог для стандартной библиотеки, включая исполняемые файлы и исходный код.
+`$GOPATH` каталго для внешних пакетов.
+https://golang.org/pkg/runtime/?m=all#newobject
 </details>
 
 </details>
