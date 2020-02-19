@@ -5,7 +5,7 @@
 
 :iphone: Telegram-канал - [@golangquiz](https://t.me/golangquiz)
 
-:bar_chart: Вопросов - 10.
+:bar_chart: Вопросов - 11.
 
 :pencil: Вы можете добавить свой вопрос или обьяснение, исправить/дополнить существующий с помощью пул реквеста :)
 
@@ -273,6 +273,32 @@ https://golang.org/pkg/runtime/?m=all#newobject
 `$GOROOT` каталог для стандартной библиотеки, включая исполняемые файлы и исходный код.
 `$GOPATH` каталго для внешних пакетов.
 https://golang.org/pkg/runtime/?m=all#newobject
+</details>
+
+</details>
+
+
+<details>
+<summary><b>11. Что выведет код?</b></summary><br>
+
+```golang
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	test1 := []int{1, 2, 3, 4, 5}
+	test1 = test1[:3]
+	test2 := test1[3:]
+	fmt.Println(test2[:2])
+}
+```
+
+<details>
+<summary><b>Ответ</b></summary><br>
+[4 5]
 </details>
 
 </details>
