@@ -265,7 +265,7 @@ https://golang.org/pkg/runtime/?m=all#newobject
 <details>
 <summary><b>10. Что такое <code>$GOROOT</code> и <code>$GOPATH</code>?</b></summary><br>
 
-<code>$GOROOT</code> каталог для стандартной библиотеки, включая исполняемые файлы и исходный код.
+<code>$GOROOT</code> каталог для стандартной библиотеки, включая исполняемые файлы и исходный код.<br>
 <code>$GOPATH</code> каталго для внешних пакетов.
 
 </details>
