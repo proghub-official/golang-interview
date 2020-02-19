@@ -236,7 +236,7 @@ func main() {
 </details>
 
 <details>
-<summary><b>8. Предположим, что `x` объявлен, а `y` не объявлен, какие пункты ниже верны?</b></summary><br>
+<summary><b>8. Предположим, что <code>x</code> объявлен, а <code>y</code> не объявлен, какие пункты ниже верны?</b></summary><br>
 
 ```golang
 x, _ := f()
@@ -254,32 +254,25 @@ x, y := f()
 </details>
 
 <details>
-<summary><b>9. Что делает `runtime.newobject()`?</b></summary><br>
+<summary><b>9. Что делает <code>runtime.newobject()</code>?</b></summary><br>
 
-<details>
-<summary><b>Ответ</b></summary><br>
 Выделяет память в куче.
 https://golang.org/pkg/runtime/?m=all#newobject
-</details>
 
 </details>
 
 
 <details>
-<summary><b>10. Что такое `$GOROOT` и `$GOPATH`?</b></summary><br>
+<summary><b>10. Что такое <code>$GOROOT</code> и <code>$GOPATH</code>?</b></summary><br>
 
-<details>
-<summary><b>Ответ</b></summary><br>
-`$GOROOT` каталог для стандартной библиотеки, включая исполняемые файлы и исходный код.
-`$GOPATH` каталго для внешних пакетов.
-https://golang.org/pkg/runtime/?m=all#newobject
-</details>
+<code>$GOROOT</code> каталог для стандартной библиотеки, включая исполняемые файлы и исходный код.
+<code>$GOPATH</code> каталго для внешних пакетов.
 
 </details>
 
 
 <details>
-<summary><b>11. Что выведет код?</b></summary><br>
+<summary><b>11. Что выведет код? (тема - slice)</b></summary><br>
 
 ```golang
 package main
