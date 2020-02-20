@@ -5,7 +5,7 @@
 
 :iphone: Telegram-канал - [@golangquiz](https://t.me/golangquiz)
 
-:bar_chart: Вопросов - 11.
+:bar_chart: Вопросов - 12.
 
 :pencil: Вы можете добавить свой вопрос или обьяснение, исправить/дополнить существующий с помощью пул реквеста :)
 
@@ -293,6 +293,17 @@ func main() {
 <summary><b>Ответ</b></summary><br>
 [4 5]
 </details>
+
+</details>
+
+
+<details>
+<summary><b>12. Перечислите функции которые могу остановить выполнение текущей горутины</b></summary><br>
+
+runtime.Gosched
+runtime.gopark
+runtime.notesleep
+runtime.Goexit
 
 </details>
 
