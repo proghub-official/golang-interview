@@ -300,9 +300,9 @@ func main() {
 <details>
 <summary><b>12. Перечислите функции которые могу остановить выполнение текущей горутины</b></summary><br>
 
-runtime.Gosched
-runtime.gopark
-runtime.notesleep
+runtime.Gosched<br>
+runtime.gopark<br>
+runtime.notesleep<br>
 runtime.Goexit
 
 </details>
