@@ -5,7 +5,7 @@
 
 :iphone: Telegram-канал - [@golangquiz](https://t.me/golangquiz)
 
-:bar_chart: Вопросов - 12.
+:bar_chart: Вопросов - 13.
 
 :pencil: Вы можете добавить свой вопрос или обьяснение, исправить/дополнить существующий с помощью пул реквеста :)
 
@@ -304,6 +304,22 @@ runtime.Gosched<br>
 runtime.gopark<br>
 runtime.notesleep<br>
 runtime.Goexit
+
+</details>
+
+<details>
+<summary><b>13. Как скопировать slice?</b></summary><br>
+
+Следует воспользоваться встроенной функцией <code>copy</code>:
+
+```golang
+x := []int{1, 2}
+y := []int{3, 4}
+ref := x
+copy(x, y)
+fmt.Println(x, y, ref)
+// Output: [3 4] [3 4] [3 4]
+```
 
 </details>
 
