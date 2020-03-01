@@ -5,7 +5,7 @@
 
 :iphone: Telegram-канал - [@golangquiz](https://t.me/golangquiz)
 
-:bar_chart: Вопросов - 13.
+:bar_chart: Вопросов - 14.
 
 :pencil: Вы можете добавить свой вопрос или обьяснение, исправить/дополнить существующий с помощью пул реквеста :)
 
@@ -308,7 +308,27 @@ runtime.Goexit
 </details>
 
 <details>
-<summary><b>13. Как скопировать slice?</b></summary><br>
+<summary><b>13. Что выведет код?</b></summary><br>
+
+Следует воспользоваться встроенной функцией <code>copy</code>:
+
+```golang
+x := []int{1, 2}
+y := []int{3, 4}
+ref := x
+x = y
+fmt.Println(x, y, ref)
+```
+
+<details>
+<summary><b>Ответ</b></summary><br>
+<code>[3 4] [3 4] [1 2]</code>
+</details>
+
+</details>
+
+<details>
+<summary><b>14. Как скопировать slice?</b></summary><br>
 
 Следует воспользоваться встроенной функцией <code>copy</code>:
 
