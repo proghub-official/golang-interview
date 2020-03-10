@@ -310,8 +310,6 @@ runtime.Goexit
 <details>
 <summary><b>13. Что выведет код?</b></summary><br>
 
-Следует воспользоваться встроенной функцией <code>copy</code>:
-
 ```golang
 x := []int{1, 2}
 y := []int{3, 4}
